@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanshi's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #e3f2fd, #e1bee7);
+      color: #333;
+      overflow-x: hidden;
+    }
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: #555;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #6a11cb;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+      clip-path: ellipse(100% 100% at 50% 0%);
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero .btn {
+      background: white;
+      color: #6a11cb;
+      padding: 0.8rem 2rem;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .hero .btn:hover {
+      background: #ddd;
+    }
+    .hero img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+    .stat-box {
+      background: #e6e6f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 150px;
+    }
+    .stat-box h3 {
+      color: #6a11cb;
+      font-size: 1.5rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #222;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .skills span {
+      display: inline-block;
+      background: #3498db;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      transition: background 0.3s;
+    }
+    .skills span:hover {
+      background: #2980b9;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #3498db;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero img {
+        margin-top: 2rem;
+      }
+      .stats {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p>HEY THERE!</p>
+      <h1>I AM PRIYANSHI</h1>
+      <p>ASPIRING WEB DEVELOPER &#128105;&#8205;&#128187; | STUDENT</p>
+      <a href="#projects" class="btn">SEE MY WORK</a>
+    </div>
+    <img src="https://thumbs.dreamstime.com/b/girl-laptop-computer-girls-smiling-isolated-white-background-50753603.jpg" alt="Girl with laptop" />
+  </section>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a Computer Science student passionate about learning web development and data analysis. I enjoy creating responsive, visually appealing websites and solving real-world problems through tech.</p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>
+        <a href="https://drive.google.com/drive/folders/1J-s6rwthZX0SZUnMn7jEZmBNOtCDkFao?usp=drive_link" target="_blank">
+          Download my Resume (PDF)
+        </a>
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Movie Ticket Booking Recommendation System</strong> – Smart ticketing and recommendation platform using user behavior.</li>
+        <li><strong>QR Code Scanner</strong> – Web application to scan and decode QR codes in real-time.</li>
+        <li><strong>Hospital Management System using JDBC (Java)</strong> – Backend system to manage hospital operations using JDBC in Java.</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Python</span>
+        <span>MySQL</span>
+        <span>C++</span>
+        <span>Java</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: renu75330@gmail.com</p>
+      <p>LinkedIn: <a href="http://linkedin.com/in/priyanshi-28643728b" target="_blank">linkedin.com/in/priyanshi</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Priyanshi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
