@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f2f2f2;
+}
+
+header {
+  background: #ffc107;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.accordion-item {
+  background: #fff;
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background: #eee;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.accordion-btn:hover {
+  background: #ddd;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background: #fafafa;
+}
+
+.player-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: red;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 10px;
+}
